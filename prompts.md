@@ -373,3 +373,18 @@ HTML, CSS, 그리고 script.js에서 이 캐릭터를 움직이던 코드까지 
 4. script.js에 오류가 날 만한 부분(없는 요소를 찾는 코드 등)이 없는지 점검해줘.
 5. 이미지 파일이 너무 크면 알려줘.
 6. backup-v1 폴더는 배포할 때 필요 없으니, 배포에서 빠지도록 정리하는 방법을 알려줘.
+## 22
+
+이 폴더를 GitHub에 올리고 싶어. 나는 git을 처음 써. 각 단계에서 무엇을 하는지 쉽게 설명해줘.
+1. git이 설치되어 있는지 확인하고, 이 폴더를 git 저장소로 만들어줘.
+2. backup-v1 폴더는 올리지 않게 .gitignore에 넣어줘.
+3. git 사용자 정보를 설정해줘: 이름 Song Yeonhee, 이메일 thddusgml15@gmail.com
+4. 지금 파일을 모두 "포트폴리오 첫 완성"이라는 메시지로 커밋해줘.
+5. 원격 저장소 「https://github.com/thddusgml15-sketch/songyeonhee-portfolio.git」를 연결하고 main 브랜치로 push 해줘.
+## 23
+
+다했어
+
+## 24
+
+바뀐 prompts.md를 커밋해서 GitHub에 올려줘
