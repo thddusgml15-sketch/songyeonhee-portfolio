@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>송연희 | 기술을 읽고, 가치를 만들고, 권리를 지키는 사람</title>
+  <meta name="description" content="변리사 지원자 송연희의 자기소개 포트폴리오" />
+  <link rel="icon" href="image/wind-up-car-logo.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- 움직임을 허용한 사람만 첫 화면 등장 애니메이션 준비 (깜빡임 방지) -->
+  <script>
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("will-animate");
+    }
+  </script>
+</head>
+<body>
+
+  <!-- 배경 뒤에 천천히 떠다니는 흐릿한 파스텔 덩어리 -->
+  <div class="blobs" aria-hidden="true">
+    <span class="blob blob--blue"></span>
+    <span class="blob blob--peach"></span>
+    <span class="blob blob--mint"></span>
+    <span class="blob blob--lilac"></span>
+  </div>
+
+  <!-- 1. 흐르는 유리 띠 -->
+  <div class="ribbon" aria-label="기술을 읽고, 가치를 만들고, 권리를 지키는 사람 · 문과이자 이과 · 교사이자 변리사">
+    <div class="ribbon__track" aria-hidden="true">
+      <span>기술을 읽고, 가치를 만들고, 권리를 지키는 사람 · 문과이자 이과 · 교사이자 변리사 ·&nbsp;</span>
+      <span>기술을 읽고, 가치를 만들고, 권리를 지키는 사람 · 문과이자 이과 · 교사이자 변리사 ·&nbsp;</span>
+      <span>기술을 읽고, 가치를 만들고, 권리를 지키는 사람 · 문과이자 이과 · 교사이자 변리사 ·&nbsp;</span>
+      <span>기술을 읽고, 가치를 만들고, 권리를 지키는 사람 · 문과이자 이과 · 교사이자 변리사 ·&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- 2. 메뉴 -->
+  <header class="nav">
+    <a href="#home" class="nav__logo" aria-label="처음으로">송연희</a>
+
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">메뉴</button>
+
+    <nav id="nav-menu" class="nav__menu">
+      <a href="#home">홈</a>
+      <a href="#works">구현한 프로젝트</a>
+      <a href="#about">걸어온 길</a>
+      <a href="#fields">전문 영역</a>
+      <a href="#faq">핵심 Q&amp;A</a>
+      <a href="#tmi">TMI</a>
+      <a href="#contact">함께 일하기</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 3. 홈 -->
+    <section id="home" class="hero">
+      <!-- 3D 오브젝트(책·전구·방패)를 클릭하면 뜨는 손글씨 말풍선. 3D 캔버스는 script.js가 넣음 -->
+      <p class="hero__bubble" aria-live="polite"></p>
+
+      <!-- 2단 스플릿: 왼쪽 글, 오른쪽 프로필 카드 (휴대폰은 글 → 사진 → 카드) -->
+      <div class="hero__layout">
+        <div class="hero__text">
+          <h1 class="hero__title">기술을 읽고, 가치를 만들고,<br />권리를 지키는 사람</h1>
+          <p class="hero__sub">제63회 변리사시험 합격 · 기술과 법의 통역가 송연희</p>
+          <a href="#works" class="btn hero__cta">역량과 이력 보기</a>
+          <p class="hero__hint">주요 프로젝트와 강점 살펴보기 ↓</p>
+        </div>
+
+        <div class="hero__side">
+          <figure class="hero__profile">
+            <div class="hero__profile-media">
+              <img src="image/profile.jpg" width="413" height="531" alt="변리사 송연희 프로필 사진" />
+              <figcaption class="hero__profile-caption">
+                <span class="hero__profile-name">SONG YEONHEE</span>
+                <span class="hero__profile-note">제63회 변리사시험 최종합격</span>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <!-- 3열 벤토 미니 카드 -->
+      <ul class="hero__bento">
+        <li class="bento-card">
+          <span class="bento-card__icon" aria-hidden="true">
+            <!-- 펜 -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4c6ef5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 20l4.2-1 10.3-10.3a2.1 2.1 0 0 0-3-3L5.2 16 4 20z"/>
+              <path d="M13.8 7.2l3 3"/>
+            </svg>
+          </span>
+          <span class="bento-card__text">
+            <span class="bento-card__label">연세 사학</span>
+            <strong class="bento-card__title">근거와 논리</strong>
+          </span>
+        </li>
+        <li class="bento-card">
+          <span class="bento-card__icon" aria-hidden="true">
+            <!-- 톱니바퀴 -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4c6ef5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <circle cx="12" cy="12" r="6.5"/>
+              <path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>
+            </svg>
+          </span>
+          <span class="bento-card__text">
+            <span class="bento-card__label">과학교육</span>
+            <strong class="bento-card__title">웹앱/3D 개발</strong>
+          </span>
+        </li>
+        <li class="bento-card">
+          <span class="bento-card__icon" aria-hidden="true">
+            <!-- 저울 -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4c6ef5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3.5v17M7.5 20.5h9M4.5 7h15"/>
+              <path d="M4.5 7L2 13a2.8 2.8 0 0 0 5 0L4.5 7z"/>
+              <path d="M19.5 7L17 13a2.8 2.8 0 0 0 5 0L19.5 7z"/>
+            </svg>
+          </span>
+          <span class="bento-card__text">
+            <span class="bento-card__label">변리사</span>
+            <strong class="bento-card__title">기술과 권리 설계</strong>
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4. 섹션들 (내용은 추후 작성) -->
+    <section id="works" class="section">
+      <h2 class="section__title">구현한 프로젝트</h2>
+      <p class="section__lead">데이터 흐름과 사용자 경험(UX)을 직접 설계해 본 시각으로, 발명자의 아이디어를 빈틈없는 명세서로 옮깁니다.</p>
+
+      <div class="works">
+        <!-- 1. 학급정부 포털: 누르면 화면 사진 창(모달)이 열림 -->
+        <button class="card work-card" type="button" data-modal="portal-modal">
+          <span class="work-card__art work-card__art--yellow">
+            <!-- 건물과 동전 -->
+            <svg viewBox="0 0 170 100" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+              <polygon points="18,38 70,12 122,38" fill="#b9d4ff"/>
+              <rect x="24" y="38" width="92" height="8" fill="#ffffff"/>
+              <rect x="36" y="46" width="10" height="36" fill="#ffffff"/>
+              <rect x="65" y="46" width="10" height="36" fill="#ffffff"/>
+              <rect x="94" y="46" width="10" height="36" fill="#ffffff"/>
+              <rect x="16" y="82" width="108" height="8" fill="#ffffff"/>
+              <circle cx="146" cy="44" r="14" fill="#ffe7a6"/>
+              <circle cx="140" cy="70" r="18" fill="#ffe7a6"/>
+              <circle cx="140" cy="70" r="11" fill="none" stroke-width="2"/>
+            </svg>
+          </span>
+          <span class="work-card__title">학급정부 포털</span>
+          <span class="work-card__quote">“입법·행정·금융 로직을 웹으로 구현한 학급 경제 플랫폼”</span>
+          <span class="work-card__desc">직급별 급여 정산, 세금 징수, 자산 거래가 연동되는 데이터 흐름과 권한 체계를 Google Apps Script로 직접 설계·구축했습니다.</span>
+          <span class="work-card__tags">
+            <span class="tag">Google Apps Script</span>
+            <span class="tag">비즈니스 로직 설계</span>
+            <span class="tag">풀스택 구현</span>
+          </span>
+          <span class="work-card__more">눌러서 화면 구경하기 →</span>
+        </button>
+
+        <!-- 2. 문제 날리기 -->
+        <article class="card work-card">
+          <div class="work-card__art work-card__art--sky">
+            <!-- 종이비행기 -->
+            <svg viewBox="0 0 170 100" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+              <path d="M14 84 C 30 70, 44 92, 60 76" fill="none" stroke-dasharray="7 8"/>
+              <polygon points="40,52 150,16 78,64" fill="#ffffff"/>
+              <polygon points="78,64 150,16 92,88" fill="#ffe7a6"/>
+              <polyline points="78,64 82,80 92,88" fill="none" stroke-width="2"/>
+              <text x="22" y="34" font-family="Pretendard Variable, Pretendard, sans-serif" font-weight="800" font-size="26" fill="#2a2540" stroke="none">×</text>
+              <text x="128" y="80" font-family="Pretendard Variable, Pretendard, sans-serif" font-weight="800" font-size="24" fill="#2a2540" stroke="none">÷</text>
+            </svg>
+          </div>
+          <h3 class="work-card__title">문제 날리기</h3>
+          <p class="work-card__quote">“사용자 몰입을 유도하는 인터랙티브 연산 웹앱”</p>
+          <p class="work-card__desc">학습자의 반복 이탈을 줄이기 위해 슈팅 게임 메커니즘과 즉각적인 피드백 로직을 결합한 웹 애플리케이션을 단독 개발했습니다.</p>
+          <div class="work-card__tags">
+            <span class="tag">Google Apps Script</span>
+            <span class="tag">UX 인터랙션</span>
+            <span class="tag">문제 해결</span>
+          </div>
+        </article>
+
+        <!-- 3. 3D 프린팅 수업 자료 -->
+        <article class="card work-card">
+          <div class="work-card__art work-card__art--yellow">
+            <!-- 3D 프린터 -->
+            <svg viewBox="0 0 170 100" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+              <rect x="35" y="8" width="100" height="84" rx="8" fill="#b9d4ff"/>
+              <rect x="47" y="22" width="76" height="54" rx="3" fill="#ffffff"/>
+              <line x1="47" y1="30" x2="123" y2="30"/>
+              <rect x="74" y="26" width="22" height="14" rx="2" fill="#ffe7a6"/>
+              <polygon points="81,40 89,40 85,47" fill="#2a2540"/>
+              <rect x="72" y="56" width="26" height="8" fill="#ffe7a6"/>
+              <rect x="76" y="50" width="18" height="6" fill="#ffe7a6"/>
+              <line x1="55" y1="66" x2="115" y2="66"/>
+              <circle cx="122" cy="84" r="3" fill="#2a2540" stroke="none"/>
+              <circle cx="111" cy="84" r="3" fill="#2a2540" stroke="none"/>
+            </svg>
+          </div>
+          <h3 class="work-card__title">3D 프린팅 수업 자료</h3>
+          <p class="work-card__quote">“3D CAD 기구 모델링 및 공차·결합 구조 설계”</p>
+          <p class="work-card__desc">3D 모델링(STL)과 2D 도면 설계를 통해 부품 간의 체결 방식과 기구적 작동 원리를 실물로 검증하며 도면 해독력을 길렀습니다.</p>
+          <div class="work-card__tags">
+            <span class="tag">Tinkercad</span>
+            <span class="tag">3D CAD 모델링</span>
+            <span class="tag">기구·도면 해석</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section__title">걸어온 길</h2>
+
+      <div class="about">
+        <!-- 왼쪽: 만화 4칸 -->
+        <ol class="comic">
+          <li class="comic__panel">
+            <!-- 책 -->
+            <svg viewBox="0 0 100 70" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+              <path d="M50 22 Q 32 12 12 18 L 12 58 Q 32 52 50 62 Q 68 52 88 58 L 88 18 Q 68 12 50 22 Z" fill="#b9d4ff"/>
+              <path d="M50 20 Q 34 10 16 15 L 16 54 Q 34 48 50 58 Z" fill="#ffffff"/>
+              <path d="M50 20 Q 66 10 84 15 L 84 54 Q 66 48 50 58 Z" fill="#ffffff"/>
+              <path d="M24 26 L 42 28 M24 35 L 42 37 M58 28 L 76 26 M58 37 L 76 35" fill="none" stroke-width="2"/>
+            </svg>
+            <strong class="comic__head">근거를 읽었습니다</strong>
+            <p class="comic__text">연세대학교 사학과. 사료를 읽고 근거로 논리를 세우는 법을 배웠고, 성적우수상을 받았습니다.</p>
+          </li>
+          <li class="comic__panel">
+            <!-- 플라스크 -->
+            <svg viewBox="0 0 100 70" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+              <path d="M44 8 L 56 8 L 56 30 L 72 60 Q 74 65 69 65 L 31 65 Q 26 65 28 60 L 44 30 Z" fill="#ffffff"/>
+              <path d="M34.5 48 L 65.5 48 L 72 60 Q 74 65 69 65 L 31 65 Q 26 65 28 60 Z" fill="#b9d4ff"/>
+              <line x1="40" y1="8" x2="60" y2="8"/>
+              <circle cx="46" cy="56" r="2.5" fill="#ffffff" stroke-width="1.5"/>
+              <circle cx="56" cy="53" r="2" fill="#ffffff" stroke-width="1.5"/>
+              <circle cx="66" cy="20" r="3" fill="#ffe7a6" stroke-width="1.8"/>
+              <circle cx="74" cy="10" r="4" fill="#ffe7a6" stroke-width="1.8"/>
+            </svg>
+            <strong class="comic__head">원리를 탐구했습니다</strong>
+            <p class="comic__text">서울교육대학교 과학교육과. 이과로 방향을 바꿔 과학 원리를 쉽게 설명하는 법을 익혔습니다.</p>
+          </li>
+          <li class="comic__panel">
+            <!-- 연필과 노트북 -->
+            <svg viewBox="0 0 100 70" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+              <rect x="12" y="14" width="50" height="34" rx="3" fill="#b9d4ff"/>
+              <path d="M20 24 L 34 24 M20 32 L 46 32 M20 40 L 30 40" fill="none" stroke-width="2"/>
+              <path d="M6 50 L 68 50 L 64 58 L 10 58 Z" fill="#ffffff"/>
+              <g transform="rotate(30 82 36)">
+                <rect x="76" y="8" width="12" height="42" fill="#ffe7a6"/>
+                <polygon points="76,50 88,50 82,62" fill="#ffffff"/>
+                <line x1="76" y1="16" x2="88" y2="16" stroke-width="2"/>
+              </g>
+            </svg>
+            <strong class="comic__head">직접 만들었습니다</strong>
+            <p class="comic__text">참샘초등학교 담임교사(2023~). 발명센터가 있는 학교에서 학급 웹앱을 만들고, 대만·미국 학교와의 국제교류를 동료 교사들과 운영했습니다. 신규 교사로 발령받아 변리사 공부를 병행하던 시기에 우수신규교사 표창을 받았습니다.</p>
+          </li>
+          <li class="comic__panel">
+            <!-- 도장 -->
+            <svg viewBox="0 0 100 70" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+              <circle cx="36" cy="14" r="9" fill="#ffe7a6"/>
+              <rect x="30" y="22" width="12" height="14" fill="#ffe7a6"/>
+              <rect x="18" y="36" width="36" height="12" rx="3" fill="#b9d4ff"/>
+              <rect x="14" y="48" width="44" height="7" rx="2" fill="#2a2540"/>
+              <circle cx="78" cy="44" r="15" fill="none" stroke="#ff6f8a" stroke-width="2.2"/>
+              <text x="78" y="49" text-anchor="middle" font-family="Pretendard Variable, Pretendard, sans-serif" font-weight="800" font-size="13" fill="#ff6f8a" stroke="none">합격</text>
+            </svg>
+            <strong class="comic__head">끝내 증명했습니다</strong>
+            <p class="comic__text">제63회 변리사시험 최종합격. 2024년 초부터 휴직 없이 담임을 하며 준비했습니다.</p>
+          </li>
+        </ol>
+
+        <!-- 오른쪽: 핵심 강점 요약 카드 -->
+        <aside class="card strengths">
+          <p class="strengths__eyebrow">핵심 강점</p>
+          <h3 class="strengths__title">문과와 이과, 교실과 특허 실무를 잇는<br />융합형 변리사</h3>
+          <ul class="strengths__list">
+            <li>
+              <strong>근거를 읽는 힘</strong>
+              <span>연세대학교 사학과 · 사료를 근거로 논리를 세우는 훈련</span>
+            </li>
+            <li>
+              <strong>원리를 이해하는 힘</strong>
+              <span>서울교육대학교 과학교육과 · 특히 물리에 익숙함</span>
+            </li>
+            <li>
+              <strong>직접 만드는 힘</strong>
+              <span>학급 경제 웹앱 · 3D 프린팅 수업 자료 개발</span>
+            </li>
+            <li>
+              <strong>끝까지 해내는 힘</strong>
+              <span>담임을 하며 제63회 변리사시험 최종합격</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="fields" class="section">
+      <h2 class="section__title">전문 영역</h2>
+
+      <!-- 마우스를 올리면(휴대폰은 누르면) 3D로 뒤집히는 카드 -->
+      <div class="fields">
+        <button class="field" type="button">
+          <span class="field__inner">
+            <span class="field__face field__face--front field__face--sky">
+              <!-- 칩 -->
+              <svg viewBox="0 0 80 80" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+                <path d="M28 8 V 20 M40 8 V 20 M52 8 V 20 M28 60 V 72 M40 60 V 72 M52 60 V 72 M8 28 H 20 M8 40 H 20 M8 52 H 20 M60 28 H 72 M60 40 H 72 M60 52 H 72" fill="none"/>
+                <rect x="20" y="20" width="40" height="40" rx="5" fill="#ffffff"/>
+                <rect x="30" y="30" width="20" height="20" rx="2" fill="#ffe7a6"/>
+              </svg>
+              <span class="field__name">AI · SW · BM</span>
+              <span class="field__hint">올려 보세요 ↻</span>
+            </span>
+            <span class="field__face field__face--back">
+              <strong class="field__back-title">코드를 짜 본 변리사의 시선</strong>
+              <span>구글 앱스 스크립트로 학급 경제 웹앱과 연산 연습 웹앱을 직접 기획·개발했습니다. 데이터 흐름과 화면을 설계해 본 경험으로 소프트웨어 발명을 읽습니다.</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="field" type="button">
+          <span class="field__inner">
+            <span class="field__face field__face--front field__face--yellow">
+              <!-- 톱니바퀴 -->
+              <svg viewBox="0 0 80 80" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+                <g fill="#b9d4ff">
+                  <rect x="34" y="4" width="12" height="16" rx="2"/>
+                  <rect x="34" y="4" width="12" height="16" rx="2" transform="rotate(45 40 40)"/>
+                  <rect x="34" y="4" width="12" height="16" rx="2" transform="rotate(90 40 40)"/>
+                  <rect x="34" y="4" width="12" height="16" rx="2" transform="rotate(135 40 40)"/>
+                  <rect x="34" y="4" width="12" height="16" rx="2" transform="rotate(180 40 40)"/>
+                  <rect x="34" y="4" width="12" height="16" rx="2" transform="rotate(225 40 40)"/>
+                  <rect x="34" y="4" width="12" height="16" rx="2" transform="rotate(270 40 40)"/>
+                  <rect x="34" y="4" width="12" height="16" rx="2" transform="rotate(315 40 40)"/>
+                  <circle cx="40" cy="40" r="25"/>
+                </g>
+                <circle cx="40" cy="40" r="9" fill="#ffffff"/>
+              </svg>
+              <span class="field__name">기계 · 로봇</span>
+              <span class="field__hint">올려 보세요 ↻</span>
+            </span>
+            <span class="field__face field__face--back">
+              <strong class="field__back-title">도면을 그려 본 변리사의 시선</strong>
+              <span>틴커캐드로 부품을 모델링하고 도면과 STL을 만들어 3D 프린팅 수업을 설계했습니다. 부품의 형상과 결합 관계를 설명하는 일에 익숙합니다.</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="field" type="button">
+          <span class="field__inner">
+            <span class="field__face field__face--front field__face--sky">
+              <!-- 도장 -->
+              <svg viewBox="0 0 80 80" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+                <circle cx="40" cy="15" r="10" fill="#ffe7a6"/>
+                <rect x="33" y="24" width="14" height="16" fill="#ffe7a6"/>
+                <rect x="18" y="40" width="44" height="14" rx="3" fill="#ffffff"/>
+                <rect x="14" y="54" width="52" height="8" rx="2" fill="#2a2540"/>
+                <path d="M16 72 H 64" fill="none" stroke-dasharray="6 6"/>
+              </svg>
+              <span class="field__name">상표 · 디자인</span>
+              <span class="field__hint">올려 보세요 ↻</span>
+            </span>
+            <span class="field__face field__face--back">
+              <strong class="field__back-title">행간을 읽는 변리사의 시선</strong>
+              <span>외고·사학과에서 다진 예리한 언어 감각과 텍스트 비교·분석 역량으로, 표장의 식별력 판단과 선행상표 침해·유사 여부 검토에 치밀함을 더합니다.</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="field" type="button">
+          <span class="field__inner">
+            <span class="field__face field__face--front field__face--yellow">
+              <!-- 번개 -->
+              <svg viewBox="0 0 80 80" aria-hidden="true" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+                <polygon points="46,6 18,44 36,44 28,74 62,32 44,32 56,6" fill="#b9d4ff"/>
+              </svg>
+              <span class="field__name">전기 · 전자</span>
+              <span class="field__hint">올려 보세요 ↻</span>
+            </span>
+            <span class="field__face field__face--back">
+              <strong class="field__back-title">원리를 가르쳐 본 변리사의 시선</strong>
+              <span>과학교육을 전공하며 물리학, 특히 전자기 분야의 기초 원리를 탄탄히 다졌습니다. 이 물리학적 기반 위에서 반도체·디스플레이 등 융복합 기술 분야로 전문성을 넓혀 가겠습니다.</span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h2 class="section__title">핵심 Q&amp;A</h2>
+
+      <!-- 펼침 목록: 한 번에 하나만 열림 -->
+      <div class="faq">
+        <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
+              <span class="faq__badge" aria-hidden="true">Q</span>
+              <span class="faq__text">문과와 이과를 모두 거친 이력이 실무에서 어떤 강점이 되나요?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1">
+            <div class="faq__a-inner">
+              <p>대전외국어고등학교에서 중국어를 전공하고 문과로 연세대학교 사학과에 입학한 뒤, 이과로 바꾸어 다시 수능을 치르고 서울교육대학교 과학교육과를 졸업했습니다. 그중에서도 물리에 특히 익숙하고 관심이 많습니다. 기술을 정확히 이해하는 일과 그것을 빈틈없는 글로 옮기는 일, 변리사에게 필요한 두 가지를 모두 훈련해 왔다는 것이 저의 가장 큰 강점입니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+              <span class="faq__badge" aria-hidden="true">Q</span>
+              <span class="faq__text">왜 교사에서 변리사가 되려고 하나요?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2">
+            <div class="faq__a-inner">
+              <p>문과와 이과를 모두 공부한 경험을 제대로 살리고 싶었습니다. 학교에서 학생들의 성취를 인정해 줄 때 가장 큰 보람을 느꼈고, 이제는 발명자의 성취를 권리로 인정받게 돕는 더 전문적인 일에서 그 보람을 이어 가고 싶습니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+              <span class="faq__badge" aria-hidden="true">Q</span>
+              <span class="faq__text">일하면서 어떻게 합격했나요?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3">
+            <div class="faq__a-inner">
+              <p>2024년 초부터 단 한 번의 휴직 없이 담임 업무를 완수하며, 고밀도 시간 관리와 치열한 실행력으로 2년 반 만에 합격과 업무 완수를 동시에 달성했습니다. 이 성실함으로 실무의 어떤 데드라인도 흔들림 없이 지켜내겠습니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+              <span class="faq__badge" aria-hidden="true">Q</span>
+              <span class="faq__text">어떤 분야에서 일하고 싶나요?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4">
+            <div class="faq__a-inner">
+              <p>AI·SW, 기계·기구, 상표 분야의 강점을 살려 빠르게 실무에 기여하고, 물리학적 기초 소양을 바탕으로 전기·전자 등 융복합 기술 분야까지 영역을 확장하겠습니다.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="tmi" class="section">
+      <h2 class="section__title">TMI</h2>
+
+      <div class="tmi">
+        <!-- 왼쪽(휴대폰은 위): 안내와 모은 개수 -->
+        <div class="tmi__side">
+          <p class="tmi__hint">손잡이를 눌러서 <br />TMI를 뽑아 보세요!</p>
+          <p class="tmi__count">모은 TMI <strong class="tmi__num">0</strong>/<span class="tmi__total">10</span></p>
+          <div class="tmi__bar" aria-hidden="true"><span class="tmi__bar-fill"></span></div>
+          <p class="tmi__done" hidden>축하해요! 이제 저에 대해 너무 많이 알게 되셨어요</p>
+        </div>
+
+        <!-- 가운데: 뽑기 기계 -->
+        <div class="tmi__machine">
+          <svg viewBox="0 0 300 430" xmlns="http://www.w3.org/2000/svg" stroke="#2a2540" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+            <defs>
+              <clipPath id="tmi-dome-clip">
+                <circle cx="150" cy="125" r="94"/>
+              </clipPath>
+              <!-- 돔 안 캡슐 한 개 (위: 색, 아래: 크림) -->
+              <g id="tmi-ball-yellow">
+                <path d="M-20 0 A20 20 0 0 1 20 0 Z" fill="#ffe7a6"/>
+                <path d="M-20 0 A20 20 0 0 0 20 0 Z" fill="#ffffff"/>
+              </g>
+              <g id="tmi-ball-sky">
+                <path d="M-20 0 A20 20 0 0 1 20 0 Z" fill="#b9d4ff"/>
+                <path d="M-20 0 A20 20 0 0 0 20 0 Z" fill="#ffffff"/>
+              </g>
+              <g id="tmi-ball-pink">
+                <path d="M-20 0 A20 20 0 0 1 20 0 Z" fill="#ff9db0"/>
+                <path d="M-20 0 A20 20 0 0 0 20 0 Z" fill="#ffffff"/>
+              </g>
+            </defs>
+
+            <!-- 바닥 -->
+            <path d="M30 420 H 270" fill="none" stroke-dasharray="10 8"/>
+
+            <!-- 뚜껑 -->
+            <rect x="128" y="14" width="44" height="18" rx="5" fill="#ffe7a6"/>
+
+            <!-- 몸통 -->
+            <rect x="70" y="226" width="160" height="160" rx="16" fill="#b9d4ff"/>
+            <rect x="82" y="384" width="30" height="16" rx="4" fill="#ffe7a6"/>
+            <rect x="188" y="384" width="30" height="16" rx="4" fill="#ffe7a6"/>
+
+            <!-- 유리 돔과 캡슐들 -->
+            <circle cx="150" cy="125" r="100" fill="#eef8ff"/>
+            <g clip-path="url(#tmi-dome-clip)" stroke-width="2.2">
+              <use class="tmi-ball" href="#tmi-ball-sky" transform="translate(100 192) rotate(-20)"/>
+              <use class="tmi-ball" href="#tmi-ball-yellow" transform="translate(141 200) rotate(10)"/>
+              <use class="tmi-ball" href="#tmi-ball-pink" transform="translate(183 194) rotate(35)"/>
+              <use class="tmi-ball" href="#tmi-ball-yellow" transform="translate(80 155) rotate(60)"/>
+              <use class="tmi-ball" href="#tmi-ball-pink" transform="translate(120 160) rotate(-40)"/>
+              <use class="tmi-ball" href="#tmi-ball-sky" transform="translate(162 158) rotate(15)"/>
+              <use class="tmi-ball" href="#tmi-ball-yellow" transform="translate(205 160) rotate(-70)"/>
+              <use class="tmi-ball" href="#tmi-ball-sky" transform="translate(100 120) rotate(90)"/>
+              <use class="tmi-ball" href="#tmi-ball-yellow" transform="translate(142 122) rotate(-10)"/>
+              <use class="tmi-ball" href="#tmi-ball-pink" transform="translate(185 120) rotate(50)"/>
+              <use class="tmi-ball" href="#tmi-ball-sky" transform="translate(222 125) rotate(-30)"/>
+              <use class="tmi-ball" href="#tmi-ball-pink" transform="translate(125 84) rotate(25)"/>
+              <use class="tmi-ball" href="#tmi-ball-sky" transform="translate(168 86) rotate(-55)"/>
+            </g>
+            <path d="M84 84 A 78 78 0 0 1 126 46" fill="none" stroke="#fff" stroke-width="9"/>
+            <circle cx="150" cy="125" r="100" fill="none"/>
+
+            <!-- 목 부분 -->
+            <rect x="62" y="212" width="176" height="26" rx="10" fill="#ffe7a6"/>
+            <text x="150" y="232" text-anchor="middle" font-family="Pretendard Variable, Pretendard, sans-serif" font-weight="800" font-size="19" fill="#2a2540" stroke="none">TMI</text>
+
+            <!-- 손잡이 (누르면 한 바퀴) -->
+            <g id="tmi-handle" class="tmi__handle" role="button" tabindex="0" aria-label="손잡이를 돌려서 TMI 뽑기">
+              <circle class="tmi__knob" cx="150" cy="286" r="30" fill="#ffe7a6"/>
+              <rect x="122" y="279" width="56" height="14" rx="7" fill="#ffffff"/>
+              <circle cx="150" cy="286" r="4" fill="#2a2540" stroke="none"/>
+            </g>
+
+            <!-- 캡슐 나오는 구멍 -->
+            <rect x="112" y="330" width="76" height="40" rx="12" fill="#2a2540"/>
+            <path d="M120 338 H 180" fill="none" stroke="#ffffff" stroke-width="2" opacity=".5"/>
+
+            <!-- 뽑혀 나오는 캡슐 (처음엔 숨김) -->
+            <g id="tmi-capsule" opacity="0" stroke-width="2.2">
+              <g class="tmi-capsule__top">
+                <path class="tmi-capsule__color" d="M-22 0 A22 22 0 0 1 22 0 Z" fill="#ffe7a6"/>
+              </g>
+              <g class="tmi-capsule__bottom">
+                <path d="M-22 0 A22 22 0 0 0 22 0 Z" fill="#ffffff"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <!-- 오른쪽(휴대폰은 아래): 펼쳐지는 쪽지 -->
+        <div class="tmi__note-area">
+          <div class="tmi-note is-empty" aria-live="polite">
+            <p class="tmi-note__no"></p>
+            <p class="tmi-note__text">손잡이를 돌리면 여기에 쪽지가 펼쳐져요.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TMI 목록 (화면에는 안 보이고, 뽑기에서 하나씩 꺼내 씀) -->
+      <ol class="tmi__facts" hidden>
+        <li>최애 치킨은 교촌 레드콤보. 메뉴판은 보지 않아요.</li>
+        <li>성심당의 도시 대전 주민. 일주일에 한 번은 성심당에 가고, 시루는 전부 먹어 봤어요.</li>
+        <li>밥 배와 디저트 배는 따로 있어요. 디저트 배가 더 커요.</li>
+        <li>출근 전 아침마다 헬스장에서 천국의 계단을 올라요.</li>
+        <li>수험 기간엔 1분 1초를 아껴 초단기 루틴으로 생활했습니다. 목표에 몰입할 때 발휘되는 극한의 집중력이 저의 무기입니다.</li>
+        <li>MBTI가 두 개예요. 일하고 공부할 땐 ISTJ, 사람들과 어울릴 땐 ENFP.</li>
+        <li>중국어, 영어, 역사, 과학. 문과와 이과를 넘나드는 융합형 인간이에요.</li>
+        <li>동료들과 맛있는 음식을 나누며 대화하는 시간을 좋아합니다. 함께 일하는 팀에 긍정적인 에너지를 불어넣는 분위기 메이커입니다.</li>
+        <li>요즘 푹 빠진 건 바이브 코딩. 이 사이트도 그렇게 만들었어요.</li>
+        <li>교실에서는 학생들과 친구처럼, 동료 선생님들과는 찐친처럼 지내요.</li>
+      </ol>
+    </section>
+
+    <section id="contact" class="contact">
+      <!-- 위쪽 물결 경계선 -->
+      <svg class="contact__wave" viewBox="0 0 1200 30" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 16 Q 50 0 100 16 T 200 16 T 300 16 T 400 16 T 500 16 T 600 16 T 700 16 T 800 16 T 900 16 T 1000 16 T 1100 16 T 1200 16 L 1200 30 L 0 30 Z" fill="#ffe7a6"/>
+        <path d="M0 16 Q 50 0 100 16 T 200 16 T 300 16 T 400 16 T 500 16 T 600 16 T 700 16 T 800 16 T 900 16 T 1000 16 T 1100 16 T 1200 16" fill="none" stroke="#2a2540" stroke-width="2" vector-effect="non-scaling-stroke"/>
+      </svg>
+
+      <div class="contact__inner">
+        <h2 class="section__title">함께 일하기</h2>
+
+        <p class="contact__headline">
+          <span class="contact__lead">제가 합류하면 가장 먼저…</span>
+          <span class="contact__rotator" aria-hidden="true"
+                data-words="명세서를 씁니다|도면을 읽습니다|발명자와 대화합니다|상표를 검토합니다|팀 회식 맛집을 찾습니다"><span class="contact__word">명세서를 씁니다</span></span>
+          <span class="sr-only">명세서를 쓰고, 도면을 읽고, 발명자와 대화하고, 상표를 검토하고, 팀 회식 맛집을 찾습니다.</span>
+        </p>
+
+        <div class="contact__mail">
+          <a class="contact__email" href="mailto:thddusgml15@gmail.com">thddusgml15@gmail.com</a>
+          <button class="btn contact__copy" type="button" data-copy="thddusgml15@gmail.com" aria-live="polite">복사</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 학급정부 포털 창(모달) -->
+  <dialog id="portal-modal" class="modal" aria-labelledby="portal-modal-title" data-lenis-prevent>
+    <div class="modal__box">
+      <button class="modal__close" type="button" aria-label="닫기">✕</button>
+      <h3 id="portal-modal-title" class="modal__title">학급정부 포털</h3>
+
+      <div class="slider" aria-roledescription="슬라이드" aria-label="학급정부 포털 화면 사진">
+        <div class="slider__stage">
+          <button class="slider__arrow" type="button" data-step="-1" aria-label="이전 사진">←</button>
+
+          <!-- 노트북 화면 틀 -->
+          <div class="laptop">
+            <div class="laptop__screen">
+              <div class="slider__track">
+                <img class="slider__slide" src="image/portal-1.png" width="800" height="500" alt="학급정부 포털 대시보드 화면"
+                     data-title="대시보드" data-desc="나라 전체 돈과 처리할 일을 한눈에" />
+                <img class="slider__slide" src="image/portal-2.png" width="800" height="500" alt="학급정부 포털 주식 화면"
+                     data-title="주식" data-desc="실제 시세를 따라 움직이는 학급 주식 시장" />
+                <img class="slider__slide" src="image/portal-3.png" width="800" height="500" alt="학급정부 포털 급여·세금 화면"
+                     data-title="급여·세금" data-desc="직업별 월급과 세금이 자동으로 계산되는 급여 명세서" />
+                <img class="slider__slide" src="image/portal-4.png" width="800" height="500" alt="학급정부 포털 상점 화면"
+                     data-title="상점" data-desc="학생들이 월급으로 물건을 사는 학급 상점" />
+              </div>
+            </div>
+            <div class="laptop__base"></div>
+          </div>
+
+          <button class="slider__arrow" type="button" data-step="1" aria-label="다음 사진">→</button>
+        </div>
+
+        <p class="slider__caption" aria-live="polite"></p>
+        <div class="slider__dots"></div>
+      </div>
+
+      <p class="modal__note">학생 개인정보 보호를 위해 이름을 가렸습니다.</p>
+    </div>
+  </dialog>
+
+  <!-- 5. 맨 아래 -->
+  <footer class="footer">
+    <p>© 2026 송연희 · 대전</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

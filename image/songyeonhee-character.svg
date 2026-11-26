@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 70 320 350" width="640" height="700">
+  <defs>
+    <filter id="wob" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="3" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3"/>
+    </filter>
+  </defs>
+  <g filter="url(#wob)" stroke="#1a1a1a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- 뒷머리 -->
+    <path id="hair-back" transform="translate(0 26)" fill="#2b2126" d="M96 120 C 70 190, 66 290, 84 372 L 236 372 C 254 290, 250 190, 224 120 Z"/>
+    <!-- 몸통 (베이지 니트) -->
+    <path id="body" fill="#eadfce" d="M58 418 C 58 322, 92 284, 160 282 C 228 284, 262 322, 262 418 Z"/>
+    <path fill="none" stroke-width="3.5" d="M94 334 C 98 360, 100 390, 100 418"/>
+    <path fill="none" stroke-width="3.5" d="M226 334 C 222 360, 220 390, 220 418"/>
+    <!-- 목 -->
+    <path fill="#ffe1cf" d="M142 200 L 142 282 C 152 292, 168 292, 178 282 L 178 200 Z"/>
+    <!-- 목 폴라 -->
+    <path fill="#eadfce" d="M134 278 C 146 292, 174 292, 186 278 L 188 296 C 172 308, 148 308, 132 296 Z"/>
+    <!-- 금목걸이 -->
+    <path fill="none" stroke="#d6a21e" stroke-width="3" d="M140 300 Q 160 328 180 300"/>
+    <rect x="155" y="322" width="10" height="16" rx="2" fill="#f2c94c" stroke-width="2.5"/>
+    <g id="head" transform="translate(0 26)">
+    <!-- 얼굴 -->
+    <ellipse id="face" fill="#ffe1cf" cx="160" cy="150" rx="60" ry="70"/>
+    <!-- 앞머리·윗머리 -->
+    <path id="bangs" fill="#2b2126" d="M96 162 C 88 90, 120 62, 160 62 C 200 62, 232 90, 224 162 C 220 136, 214 118, 204 106 C 196 122, 182 126, 168 110 C 158 124, 140 126, 130 110 C 118 120, 104 138, 96 162 Z"/>
+    <!-- 앞으로 내려온 옆머리 -->
+    <path fill="#2b2126" d="M100 150 C 84 210, 82 296, 104 356 C 118 322, 112 250, 120 192 C 114 178, 106 166, 100 150 Z"/>
+    <path fill="#2b2126" d="M220 150 C 236 210, 238 296, 216 356 C 202 322, 208 250, 200 192 C 206 178, 214 166, 220 150 Z"/>
+    <!-- 금 귀걸이 -->
+    <circle cx="104" cy="186" r="5" fill="none" stroke="#d6a21e" stroke-width="3"/>
+    <!-- 눈 -->
+    <ellipse fill="#fff" cx="138" cy="152" rx="14" ry="16"/>
+    <ellipse fill="#fff" cx="182" cy="152" rx="14" ry="16"/>
+    <circle id="pupil-left" cx="140" cy="155" r="6.5" fill="#1a1a1a" stroke="none"/>
+    <circle id="pupil-right" cx="184" cy="155" r="6.5" fill="#1a1a1a" stroke="none"/>
+    <!-- 볼터치 -->
+    <ellipse cx="122" cy="182" rx="10" ry="6" fill="#ff9db0" stroke="none" opacity=".75"/>
+    <ellipse cx="198" cy="182" rx="10" ry="6" fill="#ff9db0" stroke="none" opacity=".75"/>
+    <!-- 코·입 -->
+    <path fill="none" stroke-width="3.5" d="M160 162 q -4 10 3 12"/>
+    <path fill="#ff6f8a" stroke-width="4" d="M146 188 Q 160 204 174 188 Q 160 195 146 188 Z"/>
+    </g>
+    <!-- 브이 손 -->
+    <g id="v-hand">
+      <path fill="#ffe1cf" d="M234 340 L 254 276 L 280 284 L 262 348 Z"/>
+      <rect x="252" y="210" width="15" height="54" rx="7.5" fill="#ffe1cf" transform="rotate(-14 259 262)"/>
+      <rect x="273" y="212" width="15" height="52" rx="7.5" fill="#ffe1cf" transform="rotate(14 280 262)"/>
+      <path fill="#ffe1cf" d="M248 278 C 246 258, 260 250, 276 254 C 292 258, 294 276, 284 286 C 272 294, 254 292, 248 278 Z"/>
+      <path fill="none" stroke-width="3.5" d="M257 270 L 279 270 M258 279 L 278 279"/>
+    </g>
+    <!-- 태엽카 -->
+    <g id="wind-up-car" transform="translate(30 330)">
+      <g id="key">
+        <rect x="62" y="-8" width="8" height="16" fill="#cfcfcf"/>
+        <ellipse cx="54" cy="-16" rx="12" ry="8" fill="#ffd400"/>
+        <ellipse cx="78" cy="-16" rx="12" ry="8" fill="#ffd400"/>
+      </g>
+      <path fill="#ffd400" d="M14 40 C 14 18, 28 6, 50 6 L 90 6 C 112 6, 126 22, 126 40 Z"/>
+      <rect x="4" y="36" width="124" height="24" rx="11" fill="#ffd400"/>
+      <path fill="#bfe6ff" d="M30 36 C 32 22, 42 14, 58 14 L 64 14 L 64 36 Z"/>
+      <circle cx="84" cy="26" r="10" fill="#fff"/>
+      <circle cx="106" cy="26" r="10" fill="#fff"/>
+      <circle cx="86" cy="27" r="4.5" fill="#1a1a1a" stroke="none"/>
+      <circle cx="108" cy="27" r="4.5" fill="#1a1a1a" stroke="none"/>
+      <circle cx="34" cy="62" r="14" fill="#1a1a1a"/>
+      <circle cx="34" cy="62" r="5" fill="#fff" stroke="none"/>
+      <circle cx="100" cy="62" r="14" fill="#1a1a1a"/>
+      <circle cx="100" cy="62" r="5" fill="#fff" stroke="none"/>
+    </g>
+  </g>
+</svg>

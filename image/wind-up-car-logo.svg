@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -32 144 116" width="288" height="232">
+  <defs>
+    <filter id="wob" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.5"/>
+    </filter>
+  </defs>
+  <g filter="url(#wob)" stroke="#1a1a1a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <g id="key">
+      <rect x="62" y="-8" width="8" height="16" fill="#cfcfcf"/>
+      <ellipse cx="54" cy="-16" rx="12" ry="8" fill="#ffd400"/>
+      <ellipse cx="78" cy="-16" rx="12" ry="8" fill="#ffd400"/>
+    </g>
+    <path fill="#ffd400" d="M14 40 C 14 18, 28 6, 50 6 L 90 6 C 112 6, 126 22, 126 40 Z"/>
+    <rect x="4" y="36" width="124" height="24" rx="11" fill="#ffd400"/>
+    <path fill="#bfe6ff" d="M30 36 C 32 22, 42 14, 58 14 L 64 14 L 64 36 Z"/>
+    <circle cx="84" cy="26" r="10" fill="#fff"/>
+    <circle cx="106" cy="26" r="10" fill="#fff"/>
+    <circle id="pupil-left" cx="86" cy="27" r="4.5" fill="#1a1a1a" stroke="none"/>
+    <circle id="pupil-right" cx="108" cy="27" r="4.5" fill="#1a1a1a" stroke="none"/>
+    <circle cx="34" cy="62" r="14" fill="#1a1a1a"/>
+    <circle cx="34" cy="62" r="5" fill="#fff" stroke="none"/>
+    <circle cx="100" cy="62" r="14" fill="#1a1a1a"/>
+    <circle cx="100" cy="62" r="5" fill="#fff" stroke="none"/>
+  </g>
+</svg>
